@@ -19,5 +19,9 @@ System.out.println(" Username:" + passwd );
 
 %> 
 
+<%
+out.println("Your IP address is " + request.getRemoteAddr());
+%>
+
 </BODY>
 </HTML>
