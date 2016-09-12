@@ -5,15 +5,26 @@
  
 <html>
 <head>
-<title>SELECT Operation</title>
+<title>CREATE Operation</title>
 </head>
 <body>
-
-
  
+
+
 <sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"
      url="jdbc:mysql://172.30.187.48/sampledb"
      user="admin"  password="admin"/>
+
+
+<sql:update dataSource="${snapshot}" var="result">
+CREATE TABLE IF NOT EXISTS `Employees` (
+  `id` int(11) NOT NULL,
+  `age` int(11) NOT NULL,
+  `first` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `last` varchar(20) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+</sql:update>
  
 <sql:query dataSource="${snapshot}" var="result">
 SELECT * from Employees;
