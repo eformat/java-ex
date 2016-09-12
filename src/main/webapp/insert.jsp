@@ -5,17 +5,17 @@
  
 <html>
 <head>
-<title>JINSERT Operation</title>
+<title>INSERT Operation</title>
 </head>
 <body>
  
 <sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"
-     url="jdbc:mysql://127.10.40.130/jbossas"
-     user="adminrYadluh"  password="zNniQpBPWdxR"/>
+     url="jdbc:mysql://127.10.40.130/sampledb"
+     user="admin"  password="admin"/>
 
 
 <sql:update dataSource="${snapshot}" var="result">
-INSERT INTO Employees VALUES (104, 2, 'Ashish', 'Nabira');
+INSERT INTO Employees VALUES (105, 5, 'Ashish', 'N');
 </sql:update>
  
 <sql:query dataSource="${snapshot}" var="result">

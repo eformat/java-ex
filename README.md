@@ -19,6 +19,9 @@ Inside phpMyAdmin there should be the server IP address; it looks something like
 Quickly create a new database named whatever you want. I am going to name it test and then consequently produce a new table in there named testtable.
 
 Pls change it to the values of your environment in showdb.jsp an insert.jsp
+Example
 
 url="jdbc:mysql://127.10.40.130/l
 user="adminrYadluh"  password="zNniQpBPWdxR"/>
+
+Pls put your own credential from phpmyadmin like user/passwd and mysql db ip address.
