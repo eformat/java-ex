@@ -11,7 +11,7 @@
  
 <sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"
      url="jdbc:mysql://127.10.40.130/jbossas"
-     user="adminrYadluh"  password="zNniQpBPWdxR"/>
+     user="admin"  password="admin"/>
 
 
 <sql:update dataSource="${snapshot}" var="result">
