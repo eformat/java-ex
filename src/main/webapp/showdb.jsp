@@ -10,8 +10,9 @@
 <body>
 
 <sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"
-     url="jdbc:mysql://172.30.187.48/sampledb
-     user="admin"  password="admin"/>
+     url="jdbc:mysql://127.7.32.2/jbossas"
+     user="adminpUBpDVr"  password="r4JpVnfEsdbq"/>
+
  
 <sql:query dataSource="${snapshot}" var="result">
 SELECT * from Employees;
