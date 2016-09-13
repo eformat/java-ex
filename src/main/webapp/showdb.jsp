@@ -9,19 +9,8 @@
 </head>
 <body>
 
-<%  String user = System.getenv("MYSQL_USER"); 
-String passwd = System.getenv("MYSQL_PASSWORD"); 
-String host = System.getenv("MYSQL_DBHOST");
-String db = System.getenv("MYSQL_DATABASE");
-String rtpasswd = System.getenv("MYSQL_ROOT_PASSWORD");
-
-System.out.println(" Username:" + user );
-
-%> 
-
- 
 <sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"
-     url="jdbc:mysql://127.10.40.130/sampledb
+     url="jdbc:mysql://172.30.187.48/sampledb
      user="admin"  password="admin"/>
  
 <sql:query dataSource="${snapshot}" var="result">

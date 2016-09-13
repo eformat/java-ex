@@ -8,25 +8,11 @@
 <title>INSERT Operation</title>
 </head>
 <body>
-<%  String user = System.getenv("MYSQL_USER"); 
-String passwd = System.getenv("MYSQL_PASSWORD"); 
-String host = System.getenv("MYSQL_DBHOST");
-String db = System.getenv("MYSQL_DATABASE");
-String rtpasswd = System.getenv("MYSQL_ROOT_PASSWORD");
-
-System.out.println(" Username:" + user );
-
-%>  
-
-user envVar = process.env.OPENSHIFT_MYSQL_DB_USERNAME;
-password envVar = process.env.OPENSHIFT_MYSQL_DB_PASSWORD;
-db envVar = process.env.OPENSHIFT_APP_NAME;
-host envVar = process.env.OPENSHIFT_MYSQL_DB_HOST;
 
 
 <sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"
-     url="jdbc:mysql://$host/$db"
-     user="$user"  password="$password"/>
+     url="jdbc:mysql://172.30.187.48/sampledb"
+     user="admin"  password="admin"/>
 
 
 <sql:update dataSource="${snapshot}" var="result">

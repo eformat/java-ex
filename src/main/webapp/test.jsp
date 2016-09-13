@@ -2,7 +2,6 @@
 <BODY>
 
 
-Hello!  The DB  <%=  System.getenv("MYSQL_DATABASE") %>
 
 Hello!  The time is now <%= new java.util.Date() %>
 
