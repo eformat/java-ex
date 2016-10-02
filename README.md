@@ -1,4 +1,6 @@
-The OpenShift `jbossas` cartridge documentation can be found at:
+# Example for Openshift 2
+
+###The OpenShift `jbossas` cartridge documentation can be found at:
 
 http://openshift.github.io/documentation/oo_cartridge_guide.html#jbossas
 
@@ -6,7 +8,7 @@ http://openshift.github.io/documentation/oo_cartridge_guide.html#jbossas
 
     
 
-MySQL access
+###MySQL access
 
 Install the cartridges for MySQL and phpMyAdmin. This should be available through Add Cartidge at your openshift.com app hub.
 
@@ -18,10 +20,11 @@ Inside phpMyAdmin there should be the server IP address; it looks something like
 
 Quickly create a new database named whatever you want. I am going to name it test and then consequently produce a new table in there named testtable.
 
-Pls change it to the values of your environment in showdb.jsp an insert.jsp
+**Pls change it to the values of your environment in showdb.jsp an insert.jsp**
+
 Example
 
 url="jdbc:mysql://127.10.40.130/l
 user="adminrYadluh"  password="zNniQpBPWdxR"/>
 
-Pls put your own credential from phpmyadmin like user/passwd and mysql db ip address.
+**Pls put your own credential from phpmyadmin like user/passwd and mysql db ip address.**
