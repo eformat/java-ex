@@ -5,10 +5,20 @@
 http://openshift.github.io/documentation/oo_cartridge_guide.html#jbossas
 
 
+## How to deploy on Openshift.com
 
+1. Login to openshift.com
+
+2. Add application and select jbossas as your framework
+
+3. Give name to your app as jbossas
+
+4. Give github URL as http://github.com/ashishnabira/java-ex.git
+
+5. Press deploy button at the bottom.
     
 
-###MySQL access
+###How to get MySQL access
 
 Install the cartridges for MySQL and phpMyAdmin. This should be available through Add Cartidge at your openshift.com app hub.
 
